@@ -22,3 +22,17 @@ a{
 	background: red;
 	padding: 30px;
 }
+
+.pictures{
+	display: inline-block;
+	margin: 0 9px;
+	text-align: center;
+	box-sizing: content-box;
+	border: grey solid;
+	width: 150px;
+	height: 150px;
+}
+
+#fotitos{
+	padding: 10px 200px;
+}
