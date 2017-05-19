@@ -1,0 +1,24 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: whitesmoke;
+}
+
+a{
+	color: #FFFC9C;
+}
+
+.nav{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 30px;
+	padding-left: 100px;
+}
+
+#navbar{
+	background: red;
+	padding: 30px;
+}
