@@ -4,7 +4,7 @@
 }
 
 body{
-	background-color: whitesmoke;
+	background-color: #372424;
 }
 
 a{
@@ -19,7 +19,7 @@ a{
 }
 
 #navbar{
-	background: red;
+	background: #9F0B0B;
 	padding: 30px;
 }
 
@@ -35,4 +35,29 @@ a{
 
 #fotitos{
 	padding: 10px 200px;
+}
+
+#botones{
+	padding: 1% 14%;
+}
+
+.btn{
+	width: 30%;
+	height: 27px;
+	color: #FFFC9C;
+	background-color: #9F0B0B;
+	border: #372424 solid;
+}
+
+#section3{
+	padding: 1% 13%;
+}
+
+.parraf{
+	box-sizing: border-box;
+	width: 41%;
+	display: inline-block;
+	margin: 20px;
+	text-align: justify;
+	color: #FFFC9C;
 }
