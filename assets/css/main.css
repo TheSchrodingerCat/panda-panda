@@ -11,6 +11,10 @@ a{
 	color: #FFFC9C;
 }
 
+li{
+	list-style-type: none;
+}
+
 .nav{
 	display: inline-block;
 	box-sizing: border-box;
@@ -23,8 +27,10 @@ a{
 	padding: 30px;
 }
 
+/* fotos pandas */
+
 .pictures{
-	display: inline-block;
+	float: left;
 	margin: 0 9px;
 	text-align: center;
 	box-sizing: content-box;
@@ -33,9 +39,25 @@ a{
 	height: 150px;
 }
 
+#fotos-removibles #fotitos .pictures .pict{
+	float: left;
+	/*position: absolute;
+	z-index: 0;*/
+}
+
 #fotitos{
+	overflow: auto;
 	padding: 10px 200px;
 }
+
+#fotos-removibles #fotitos .pictures .pict-rm{
+	width: 15%;
+	float: left;
+	/*position: absolute;
+	z-index: 1;*/
+}
+
+/* botones */
 
 #botones{
 	padding: 1% 14%;
@@ -48,6 +70,8 @@ a{
 	background-color: #9F0B0B;
 	border: #372424 solid;
 }
+
+/* parrafos */
 
 #section3{
 	padding: 1% 13%;

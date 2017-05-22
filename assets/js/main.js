@@ -15,6 +15,12 @@ function principal(){
 		fotito.setAttribute("id","pict" + arrFotos.indexOf(element));
 		fotito.setAttribute("src",element);
 
+		var deleteFoto = document.createElement("img");
+		deleteFoto.setAttribute("class","pict-rm");
+		deleteFoto.setAttribute("id","dlt" + arrFotos.indexOf(element));
+		deleteFoto.setAttribute("src","assets/img/remove.png");
+
+		cajita.appendChild(deleteFoto);
 		cajita.appendChild(fotito);
 		fotos.appendChild(cajita);
 	});
