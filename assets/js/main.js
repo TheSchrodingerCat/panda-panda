@@ -103,11 +103,11 @@ function principal(){
 	var clickearExtincion = document.getElementById("boton1");	
 
 	clickearOrigen.addEventListener("click",function(){
-			p1.classList.toggle("parraf");
+			p1.classList.toggle("nothing");
 		});
 
 	clickearExtincion.addEventListener("click",function(){
-			p2.classList.toggle("parraf");
+			p2.classList.toggle("nothing");
 		});
 
 
