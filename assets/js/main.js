@@ -30,6 +30,28 @@ function principal(){
 		fotos.appendChild(cajita);
 	});
 
+	//parrafos
+		var p1 = document.getElementById("parrafos1");
+		var p2 = document.getElementById("parrafos2");
+		
+		
+		var text1P1 = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, nisi ea delectus explicabo repudiandae repellat facere, earum rerum atque iste ullam, quos dignissimos corporis velit ipsa ad, reiciendis consequatur distinctio.");
+
+		var text2P1 = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet architecto libero animi veniam possimus iure dolorum placeat officia sit vero, hic blanditiis aliquid magni dolorem voluptates delectus quia nemo perferendis.");
+
+		var text1P2 = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio placeat odit quam omnis tempore aliquid. Nam officiis odit eum reprehenderit eos, tempore, cumque perferendis delectus, quibusdam non voluptatum odio neque!");
+
+		var text2P2 = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo placeat impedit in modi optio tempore magnam quibusdam molestias fugit asperiores sed nisi perspiciatis voluptatum ducimus veritatis, ad id ullam! Et.");
+
+		p1.appendChild(text1P1);
+		p1.appendChild(document.createElement("br"));
+		p1.appendChild(document.createElement("br"));
+		p1.appendChild(text2P1);
+		p2.appendChild(text1P2);
+		p2.appendChild(document.createElement("br"));
+		p2.appendChild(document.createElement("br"));
+		p2.appendChild(text2P2);
+
 	//borrar fotos
 
 	arrFotos.forEach(function(element){
@@ -72,8 +94,21 @@ function principal(){
 			miDiv.classList.add("picture" + arrFotos.indexOf(element));
 			miDivIn.classList.add("pictureIn" + arrFotos.indexOf(element));
 			miDivDown.classList.add("pictureDown" + arrFotos.indexOf(element));
-		})
+		});
 	});
+
+	//eliminar y reponer párrafos
+
+	var clickearOrigen = document.getElementById("boton0");
+	var clickearExtincion = document.getElementById("boton1");	
+
+	clickearOrigen.addEventListener("click",function(){
+			p1.classList.toggle("parraf");
+		});
+
+	clickearExtincion.addEventListener("click",function(){
+			p2.classList.toggle("parraf");
+		});
 
 
 }
