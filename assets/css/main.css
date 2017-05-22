@@ -29,18 +29,63 @@ li{
 
 /* fotos pandas */
 
-.pictures{
-	float: left;
-	margin: 0 9px;
-	text-align: center;
-	box-sizing: content-box;
-	border: grey solid;
-	width: 150px;
-	height: 150px;
+.pictureIn0, .pictureIn1, .pictureIn2, .pictureIn3{
+	height: 25px;
+	margin-top: 0;
+	padding-top: 0;
 }
 
-#fotos-removibles #fotitos .pictures .pict{
+#btn0, #btn1, #btn2, #btn3{
 	float: left;
+	padding: 2%;
+	border-radius: 5px;
+	background-color: #9F0B0B;
+	color: #FFFC9C;
+	font-weight: bold;
+}
+
+.pictureDown0{
+	background: url("../img/a1.jpg");
+	background-repeat: no-repeat;
+}
+
+.pictureDown1{
+	background: url("../img/a2.jpg");
+	background-repeat: no-repeat;
+}
+
+.pictureDown2{
+	background: url("../img/a3.jpg");
+	background-repeat: no-repeat;
+}
+
+.pictureDown3{
+	background: url("../img/a4.jpg");
+	background-repeat: no-repeat;
+}
+
+.picture0, .picture1, .picture2, .picture3{
+	float: left;
+	margin: 9px 9px;
+	text-align: center;
+	box-sizing: border-box;
+	width: 150px;
+	height: 175px;
+}
+
+.pictureDown0, .pictureDown1, .pictureDown2, .pictureDown3{
+	float: left;
+	margin-top: 0;
+	text-align: center;
+	box-sizing: content-box;
+	width: 150px;
+	height: 150px;
+	border: grey solid;
+}
+
+.pictDown0, .pictDown1, .pictDown2, .pictDown3{
+	float: left;
+	border: grey solid;
 	/*position: absolute;
 	z-index: 0;*/
 }
@@ -50,22 +95,19 @@ li{
 	padding: 10px 200px;
 }
 
-#fotos-removibles #fotitos .pictures .pict-rm{
-	width: 15%;
-	float: left;
-	/*position: absolute;
-	z-index: 1;*/
-}
-
 /* botones */
+
+#section2{
+	overflow: auto
+}
 
 #botones{
 	padding: 1% 14%;
 }
 
-.btn{
+.boton{
 	width: 30%;
-	height: 27px;
+	height: 43px;
 	color: #FFFC9C;
 	background-color: #9F0B0B;
 	border: #372424 solid;
@@ -85,3 +127,4 @@ li{
 	text-align: justify;
 	color: #FFFC9C;
 }
+
