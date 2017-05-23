@@ -15,6 +15,7 @@ function principal(){
 		cajitaIn.setAttribute("id","divIn" + arrFotos.indexOf(element));
 
 		var btnBorrar = document.createElement("button");
+		btnBorrar.setAttribute("class","botoncito" + arrFotos.indexOf(element));
 		btnBorrar.setAttribute("id","btn" + arrFotos.indexOf(element));
 		var nameBotonBorrar = document.createTextNode("X");
 
@@ -64,6 +65,7 @@ function principal(){
 			miDiv.classList.remove("picture" + arrFotos.indexOf(element));
 			miDivIn.classList.remove("pictureIn" + arrFotos.indexOf(element));
 			miDivDown.classList.remove("pictureDown" + arrFotos.indexOf(element));
+			clickear.classList.toggle("nothing");
 		})
 	});
 	
@@ -89,11 +91,13 @@ function principal(){
 		var miDiv = document.getElementById("div" + arrFotos.indexOf(element));
 		var miDivIn = document.getElementById("divIn" + arrFotos.indexOf(element));
 		var miDivDown = document.getElementById("divDown" + arrFotos.indexOf(element));
+		var botonX = document.getElementById("btn" + arrFotos.indexOf(element));
 
 		clickear.addEventListener("click",function(){
 			miDiv.classList.add("picture" + arrFotos.indexOf(element));
 			miDivIn.classList.add("pictureIn" + arrFotos.indexOf(element));
 			miDivDown.classList.add("pictureDown" + arrFotos.indexOf(element));
+			botonX.classList.toggle("nothing");
 		});
 	});
 
